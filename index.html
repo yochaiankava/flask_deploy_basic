@@ -10,7 +10,7 @@
 </head>
 <body>
     <script>
-        axios.get('https://flask-demo-basic.onrender.com/students').then(res => {
+        axios.get('http://localhost:5000/students').then(res => {
             console.log(res.data);
             res.data.map(student => console.log(`student is: ${student.name}`))
         })
